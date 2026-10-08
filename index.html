@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PO Alula Sadida Maryam | Bus Pariwisata</title>
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     NAVBAR
+     ========================================================= -->
+
+<nav class="navbar">
+
+    <div class="nav-container">
+
+        <a href="#home" class="logo" title="PO Alula Sadida Maryam">
+            <img src="images/logo.png" alt="Logo ASM Trans" class="logo-img">
+            <div class="logo-text">
+                <span class="logo-brand">ALULA</span>
+                <small class="logo-tagline">BUS PARIWISATA</small>
+            </div>
+        </a>
+
+        <div class="nav-menu">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#cek-harga">
+                Cek Harga
+            </a>
+
+            <a href="#armada">
+                Armada
+            </a>
+
+            <a href="#wisata">
+                Paket Wisata
+            </a>
+
+            <a href="#cara-sewa">
+                Cara Sewa
+            </a>
+
+            <a href="#kontak">
+                Kontak
+            </a>
+
+            <a href="#cek-harga" class="nav-button">
+                Cek Harga
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <span class="hero-badge">
+            🚌 SEWA BUS PARIWISATA
+        </span>
+
+        <h1>
+            Mau Wisata Bareng
+            <span>Rombongan?</span>
+        </h1>
+
+        <p>
+            Nikmati perjalanan wisata yang nyaman,
+            aman, dan menyenangkan bersama
+            PO Alula Sadida Maryam.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#cek-harga" class="btn-primary">
+                Cek Estimasi Harga
+            </a>
+
+            <a href="#armada" class="btn-outline">
+                Lihat Armada
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CEK HARGA
+     ========================================================= -->
+
+<section id="cek-harga" class="price-section">
+
+    <div class="section-header">
+
+        <span class="section-label">
+            ESTIMASI PERJALANAN
+        </span>
+
+        <h2>
+            Cek Estimasi Harga
+        </h2>
+
+        <p>
+            Isi data perjalanan untuk mendapatkan
+            estimasi harga sewa bus.
+        </p>
+
+    </div>
+
+
+    <div class="price-container">
+
+        <form id="priceForm">
+
+            <!-- KOTA PENJEMPUTAN -->
+            <div class="form-group">
+                <label for="kotaJemput">
+                    <span class="form-icon">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/>
+                            <circle cx="12" cy="9" r="2.5"/>
+                        </svg>
+                    </span>
+                    Kota Penjemputan
+                </label>
+                <input
+                    type="text"
+                    id="kotaJemput"
+                    placeholder="Contoh: Gombong"
+                    required
+                >
+            </div>
+
+            <!-- KOTA TUJUAN -->
+            <div class="form-group">
+                <label for="kotaTujuan">
+                    <span class="form-icon">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+                        </svg>
+                    </span>
+                    Kota Tujuan
+                </label>
+                <input
+                    type="text"
+                    id="kotaTujuan"
+                    placeholder="Contoh: Yogyakarta"
+                    required
+                >
+            </div>
+
+            <!-- TANGGAL BERANGKAT -->
+            <div class="form-group">
+                <label for="tanggalBerangkat">
+                    <span class="form-icon">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                        </svg>
+                    </span>
+                    Tanggal Berangkat
+                </label>
+                <input
+                    type="date"
+                    id="tanggalBerangkat"
+                    required
+                >
+            </div>
+
+            <!-- TANGGAL PULANG -->
+            <div class="form-group">
+                <label for="tanggalPulang">
+                    <span class="form-icon">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                            <polyline points="10 14 12 16 16 12"/>
+                        </svg>
+                    </span>
+                    Tanggal Pulang
+                </label>
+                <input
+                    type="date"
+                    id="tanggalPulang"
+                    required
+                >
+            </div>
+
+            <!-- JAM PENJEMPUTAN -->
+            <div class="form-group">
+                <label for="jamPenjemputan">
+                    <span class="form-icon">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="9"/>
+                            <polyline points="12 7 12 12 15 14"/>
+                        </svg>
+                    </span>
+                    Jam Penjemputan
+                </label>
+                <input
+                    type="time"
+                    id="jamPenjemputan"
+                    required
+                >
+            </div>
+
+            <!-- JUMLAH PENUMPANG -->
+            <div class="form-group">
+                <label for="jumlahPenumpang">
+                    <span class="form-icon">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </span>
+                    Jumlah Penumpang
+                </label>
+                <input
+                    type="number"
+                    id="jumlahPenumpang"
+                    min="1"
+                    placeholder="Contoh: 40"
+                    required
+                >
+            </div>
+
+            <!-- KELAS BUS -->
+            <div class="form-group">
+                <label for="kelasBus">
+                    <span class="form-icon">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="4" y="3" width="16" height="16" rx="3"/>
+                            <path d="M4 11h16"/>
+                            <circle cx="7.5" cy="15.5" r="1.5" fill="currentColor"/>
+                            <circle cx="16.5" cy="15.5" r="1.5" fill="currentColor"/>
+                            <path d="M6 19v2"/>
+                            <path d="M18 19v2"/>
+                        </svg>
+                    </span>
+                    Kelas Bus
+                </label>
+                <select id="kelasBus" required>
+                    <option value="">
+                        Pilih kelas bus
+                    </option>
+                    <option value="medium">
+                        Medium Bus
+                    </option>
+                    <option value="executive">
+                        Executive Bus
+                    </option>
+                    <option value="big">
+                        Big Bus
+                    </option>
+                    <option value="luxury">
+                        Luxury Bus
+                    </option>
+                </select>
+            </div>
+
+            <!-- SUBMIT -->
+            <button
+                type="submit"
+                class="btn-primary price-submit"
+            >
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="4" y="2" width="16" height="20" rx="2"/>
+                    <line x1="8" y1="6" x2="16" y2="6"/>
+                    <line x1="16" y1="14" x2="16" y2="18"/>
+                    <path d="M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M8 18h.01M12 18h.01"/>
+                </svg>
+                Cek Estimasi Harga
+            </button>
+
+        </form>
+
+
+        <!-- =================================================
+             HASIL ESTIMASI
+             ================================================= -->
+
+        <div
+            id="hasilHarga"
+            class="price-result"
+            style="display: none;"
+        >
+
+            <div class="result-header">
+                <span class="result-badge">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                    HASIL ESTIMASI
+                </span>
+                <h3>
+                    Estimasi Perjalanan Anda
+                </h3>
+            </div>
+
+
+            <div class="hasil-info">
+
+                <!-- RUTE -->
+                <div class="hasil-item full-width">
+                    <div class="hasil-icon-box hasil-icon-route">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="6" cy="18" r="3"/>
+                            <circle cx="18" cy="6" r="3"/>
+                            <path d="M6 15V11a4 4 0 0 1 4-4h4"/>
+                            <polyline points="15 4 18 6 15 8"/>
+                        </svg>
+                    </div>
+                    <div class="hasil-item-detail">
+                        <span class="hasil-item-label">
+                            Rute Perjalanan
+                        </span>
+                        <strong id="hasilRute" class="hasil-item-val">
+                            -
+                        </strong>
+                    </div>
+                </div>
+
+                <!-- JAM PENJEMPUTAN -->
+                <div class="hasil-item">
+                    <div class="hasil-icon-box hasil-icon-time">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="9"/>
+                            <polyline points="12 7 12 12 15 14"/>
+                        </svg>
+                    </div>
+                    <div class="hasil-item-detail">
+                        <span class="hasil-item-label">
+                            Jam Penjemputan
+                        </span>
+                        <strong id="hasilJamPenjemputan" class="hasil-item-val">
+                            -
+                        </strong>
+                    </div>
+                </div>
+
+                <!-- PENUMPANG -->
+                <div class="hasil-item">
+                    <div class="hasil-icon-box hasil-icon-passenger">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <div class="hasil-item-detail">
+                        <span class="hasil-item-label">
+                            Jumlah Penumpang
+                        </span>
+                        <strong id="hasilPenumpang" class="hasil-item-val">
+                            -
+                        </strong>
+                    </div>
+                </div>
+
+                <!-- KELAS BUS -->
+                <div class="hasil-item">
+                    <div class="hasil-icon-box hasil-icon-bus">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="4" y="3" width="16" height="16" rx="3"/>
+                            <path d="M4 11h16"/>
+                            <path d="M8 3v8"/>
+                            <path d="M16 3v8"/>
+                            <circle cx="7.5" cy="15.5" r="1.5" fill="currentColor"/>
+                            <circle cx="16.5" cy="15.5" r="1.5" fill="currentColor"/>
+                            <path d="M6 19v2"/>
+                            <path d="M18 19v2"/>
+                        </svg>
+                    </div>
+                    <div class="hasil-item-detail">
+                        <span class="hasil-item-label">
+                            Kelas Armada
+                        </span>
+                        <strong id="hasilKelas" class="hasil-item-val">
+                            -
+                        </strong>
+                    </div>
+                </div>
+
+                <!-- DURASI -->
+                <div class="hasil-item">
+                    <div class="hasil-icon-box hasil-icon-duration">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="13" r="8"/>
+                            <polyline points="12 9 12 13 14.5 15"/>
+                            <path d="M12 2v3"/>
+                            <path d="M19 6l-1.5 1.5"/>
+                        </svg>
+                    </div>
+                    <div class="hasil-item-detail">
+                        <span class="hasil-item-label">
+                            Durasi Sewa
+                        </span>
+                        <strong id="hasilDurasi" class="hasil-item-val">
+                            -
+                        </strong>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="result-price">
+                <div class="result-price-badge">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="5" width="20" height="14" rx="2"/>
+                        <line x1="2" y1="10" x2="22" y2="10"/>
+                    </svg>
+                    <span>Estimasi Biaya Sewa</span>
+                </div>
+                <strong id="harga">
+                    Rp0
+                </strong>
+                <small class="result-price-note">
+                    *Estimasi awal sistem berdasarkan durasi & rute
+                </small>
+            </div>
+
+
+            <div class="result-warning">
+                <div class="warning-icon-box">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="12" y1="8" x2="12" y2="12"/>
+                        <line x1="12" y1="16" x2="12.01" y2="16"/>
+                    </svg>
+                </div>
+                <div class="warning-text">
+                    <strong>Catatan Penting</strong>
+                    <p>
+                        Harga yang ditampilkan merupakan estimasi website dan belum menjadi harga final.
+                        Harga dan ketersediaan armada akan dikonfirmasi lebih lanjut oleh admin.
+                    </p>
+                </div>
+            </div>
+
+
+            <button
+                type="button"
+                class="btn-primary price-booking-btn"
+                onclick="ajukanSewa()"
+            >
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.889-9.884 9.889m0-17.727c-4.32 0-7.838 3.51-7.84 7.83a7.82 7.82 0 001.296 4.341l.202.321-.595 2.176 2.228-.584.311.185a7.834 7.834 0 004.398 1.332h.004c4.317 0 7.835-3.51 7.838-7.832 0-2.09-.814-4.055-2.29-5.534A7.79 7.79 0 0012.051 4.058z"/>
+                </svg>
+                Ajukan Sewa ke Admin via WhatsApp
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ARMADA
+     ========================================================= -->
+
+<section id="armada" class="armada-section">
+
+    <div class="section-header">
+
+        <span class="section-label">
+            ARMADA KAMI
+        </span>
+
+        <h2>
+            Pilihan Unit Bus
+        </h2>
+
+        <p>
+            Pilih unit sesuai kebutuhan perjalanan
+            rombongan Anda.
+        </p>
+
+    </div>
+
+
+    <div class="bus-grid">
+
+
+        <!-- MEDIUM CLASS -->
+
+        <div class="bus-card">
+
+            <div class="bus-image">
+
+                <img
+                    src="images/bus-medium.jpg"
+                    alt="Medium Class"
+                >
+
+            </div>
+
+            <div class="bus-content">
+
+                <span class="bus-label">
+                    MEDIUM CLASS
+                </span>
+
+                <h3>
+                    Medium Class
+                </h3>
+
+                <button
+                    type="button"
+                    class="btn-outline"
+                    onclick="cekUnit('medium')"
+                >
+                    Cek Unit
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- BUSINESS CLASS -->
+
+        <div class="bus-card">
+
+            <div class="bus-image">
+
+                <img
+                    src="images/bus-executive.jpg"
+                    alt="Business Class"
+                >
+
+            </div>
+
+            <div class="bus-content">
+
+                <span class="bus-label">
+                    BUSINESS CLASS
+                </span>
+
+                <h3>
+                    Business Class
+                </h3>
+
+                <button
+                    type="button"
+                    class="btn-outline"
+                    onclick="cekUnit('executive')"
+                >
+                    Cek Unit
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- EXECUTIVE CLASS -->
+
+        <div class="bus-card">
+
+            <div class="bus-image">
+
+                <img
+                    src="images/bus-big.jpg"
+                    alt="Executive Class"
+                >
+
+            </div>
+
+            <div class="bus-content">
+
+                <span class="bus-label">
+                    EXECUTIVE CLASS
+                </span>
+
+                <h3>
+                    Executive Class
+                </h3>
+
+                <button
+                    type="button"
+                    class="btn-outline"
+                    onclick="cekUnit('big')"
+                >
+                    Cek Unit
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PREMIUM / LUXURY CLASS -->
+
+        <div class="bus-card">
+
+            <div class="bus-image">
+
+                <img
+                    src="images/bus-luxury.jpg"
+                    alt="Premium Luxury Class"
+                >
+
+            </div>
+
+            <div class="bus-content">
+
+                <span class="bus-label">
+                    PREMIUM / LUXURY
+                </span>
+
+                <h3>
+                    Premium/Luxury Class
+                </h3>
+
+                <button
+                    type="button"
+                    class="btn-outline"
+                    onclick="cekUnit('luxury')"
+                >
+                    Cek Unit
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- ^^^ PENUTUP BUS-GRID YANG TADI HILANG -->
+
+
+</section>
+<!-- ^^^ PENUTUP ARMADA YANG TADI HILANG -->
+
+
+<!-- =========================================================
+     PAKET WISATA
+     ========================================================= -->
+
+<section id="wisata" class="wisata-section">
+
+    <div class="section-header">
+
+        <span class="section-label">
+            DESTINASI WISATA
+        </span>
+
+        <h2>
+            Pilihan Destinasi
+        </h2>
+
+        <p>
+            Temukan inspirasi perjalanan wisata
+            bersama rombongan Anda.
+        </p>
+
+    </div>
+
+
+    <div class="wisata-grid">
+
+        <div class="wisata-card">
+
+            <img
+                src="images/Yogya.png"
+                alt="Wisata Yogyakarta"
+                onclick="bukaGambar(this)"
+            >
+
+        </div>
+
+
+        <div class="wisata-card">
+
+            <img
+                src="images/Bandung.png"
+                alt="Wisata Bandung"
+                onclick="bukaGambar(this)"
+            >
+
+        </div>
+
+
+        <div class="wisata-card">
+
+            <img
+                src="images/Wonosobo.png"
+                alt="Wisata Dieng Wonosobo"
+                onclick="bukaGambar(this)"
+            >
+
+        </div>
+
+
+        <div class="wisata-card">
+
+            <img
+                src="images/Bali.png"
+                alt="Wisata Bali"
+                onclick="bukaGambar(this)"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FASILITAS
+     ========================================================= -->
+
+<section class="fasilitas-section">
+
+    <div class="section-header">
+
+        <span class="section-label">
+            FASILITAS
+        </span>
+
+        <h2>
+            Kenyamanan Perjalanan
+        </h2>
+
+        <p>
+            Kami berusaha memberikan pengalaman
+            perjalanan yang nyaman bagi setiap pelanggan.
+        </p>
+
+    </div>
+
+
+    <div class="fasilitas-grid">
+
+        <div class="fasilitas-card">
+
+            <div class="fasilitas-icon">
+                ❄️
+            </div>
+
+            <h3>
+                Full AC
+            </h3>
+
+            <p>
+                Menjaga perjalanan tetap nyaman
+                di berbagai kondisi cuaca.
+            </p>
+
+        </div>
+
+
+        <div class="fasilitas-card">
+
+            <div class="fasilitas-icon">
+                🎵
+            </div>
+
+            <h3>
+                Audio
+            </h3>
+
+            <p>
+                Hiburan audio untuk menemani
+                perjalanan Anda.
+            </p>
+
+        </div>
+
+
+        <div class="fasilitas-card">
+
+            <div class="fasilitas-icon">
+                💺
+            </div>
+
+            <h3>
+                Kursi Nyaman
+            </h3>
+
+            <p>
+                Kursi nyaman untuk perjalanan
+                jarak dekat maupun jauh.
+            </p>
+
+        </div>
+
+
+        <div class="fasilitas-card">
+
+            <div class="fasilitas-icon">
+                🧳
+            </div>
+
+            <h3>
+                Bagasi
+            </h3>
+
+            <p>
+                Ruang penyimpanan untuk barang
+                bawaan selama perjalanan.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CARA SEWA
+     ========================================================= -->
+
+<section id="cara-sewa" class="cara-section">
+
+    <div class="section-header">
+
+        <span class="section-label">
+            CARA SEWA
+        </span>
+
+        <h2>
+            Mudah dan Praktis
+        </h2>
+
+        <p>
+            Proses pemesanan bus bersama
+            PO Alula Sadida Maryam.
+        </p>
+
+    </div>
+
+
+    <div class="cara-grid">
+
+        <div class="cara-card">
+
+            <span class="cara-number">
+                01
+            </span>
+
+            <h3>
+                Cek Estimasi
+            </h3>
+
+            <p>
+                Masukkan data perjalanan untuk
+                melihat estimasi harga.
+            </p>
+
+        </div>
+
+
+        <div class="cara-card">
+
+            <span class="cara-number">
+                02
+            </span>
+
+            <h3>
+                Ajukan Sewa
+            </h3>
+
+            <p>
+                Kirim data perjalanan kepada
+                admin melalui WhatsApp.
+            </p>
+
+        </div>
+
+
+        <div class="cara-card">
+
+            <span class="cara-number">
+                03
+            </span>
+
+            <h3>
+                Konfirmasi Admin
+            </h3>
+
+            <p>
+                Admin akan mengecek armada,
+                jadwal, dan harga final.
+            </p>
+
+        </div>
+
+
+        <div class="cara-card">
+
+            <span class="cara-number">
+                04
+            </span>
+
+            <h3>
+                Booking
+            </h3>
+
+            <p>
+                Setelah disepakati, lanjutkan
+                proses booking sesuai ketentuan.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     KONTAK
+     ========================================================= -->
+
+<section id="kontak" class="contact-section">
+
+    <div class="contact-container">
+
+        <div class="contact-content">
+
+            <span class="section-label">
+                HUBUNGI KAMI
+            </span>
+
+            <h2>
+                Siap Berangkat Bersama Kami?
+            </h2>
+
+            <p>
+                Hubungi admin PO Alula Sadida Maryam
+                untuk informasi lebih lanjut mengenai
+                armada, jadwal, dan pemesanan.
+            </p>
+
+        </div>
+
+
+        <a
+            href="https://wa.me/62882005363151"
+            target="_blank"
+            class="btn-primary"
+        >
+            💬 Hubungi Admin WhatsApp
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <img
+                src="images/logo.png"
+                alt="Logo ASM Trans"
+                class="footer-logo"
+            >
+
+            <h3>
+                PO ALULA SADIDA MARYAM
+            </h3>
+
+            <p>
+                BUS PARIWISATA
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#armada">
+                Armada
+            </a>
+
+            <a href="#wisata">
+                Wisata
+            </a>
+
+            <a href="#kontak">
+                Kontak
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 PO Alula Sadida Maryam.
+            All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     POPUP DETAIL UNIT
+     ========================================================= -->
+
+<div id="unitModal" class="unit-modal">
+
+    <div class="unit-modal-content">
+
+        <button
+            type="button"
+            class="unit-modal-close"
+            onclick="tutupUnit()"
+            aria-label="Tutup"
+        >
+            ×
+        </button>
+
+
+        <div class="unit-modal-image">
+
+            <img
+                id="unitModalImage"
+                src=""
+                alt="Detail Unit Bus"
+            >
+
+        </div>
+
+
+        <div class="unit-modal-info">
+
+            <span
+                id="unitModalLabel"
+                class="unit-modal-label"
+            >
+                UNIT BUS
+            </span>
+
+
+            <h2 id="unitModalTitle">
+                Nama Unit
+            </h2>
+
+
+            <p id="unitModalDescription">
+                Deskripsi unit bus.
+            </p>
+
+
+            <div
+                id="unitModalSpecs"
+                class="unit-modal-specs"
+            >
+            </div>
+
+
+            <div class="unit-modal-facilities">
+
+                <h3>
+                    Fasilitas Unit
+                </h3>
+
+                <ul id="unitModalFacilities">
+                </ul>
+
+            </div>
+
+
+            <div class="unit-modal-actions">
+
+                <button
+                    type="button"
+                    class="btn-primary"
+                    onclick="tutupUnit()"
+                >
+                    Tutup
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     IMAGE LIGHTBOX
+     ========================================================= -->
+
+<div id="imageLightbox" class="image-lightbox">
+
+    <button
+        type="button"
+        class="lightbox-close"
+        onclick="tutupGambar()"
+        aria-label="Tutup gambar"
+    >
+        ×
+    </button>
+
+
+    <img
+        id="lightboxImage"
+        src=""
+        alt="Preview Destinasi"
+    >
+
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+     ========================================================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
