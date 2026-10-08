@@ -269,11 +269,13 @@ section {
 }
 
 .hero-badge {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 
     margin-bottom: 20px;
 
-    padding: 8px 15px;
+    padding: 8px 18px;
 
     border-radius: 30px;
 
@@ -287,6 +289,11 @@ section {
     font-weight: 800;
 
     letter-spacing: 1px;
+}
+
+.hero-badge svg {
+    color: var(--gold-light);
+    flex-shrink: 0;
 }
 
 .hero h1 {
@@ -1117,69 +1124,6 @@ section {
 
 
 /* =========================================================
-   PAKET WISATA
-   ========================================================= */
-
-.wisata-section {
-    width: 100%;
-
-    padding: 100px 6%;
-
-    background: var(--light);
-}
-
-.wisata-grid {
-    width: min(1250px, 100%);
-
-    margin: 0 auto;
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(4, minmax(0, 1fr));
-
-    gap: 24px;
-}
-
-.wisata-card {
-    width: 100%;
-
-    min-width: 0;
-
-    position: relative;
-
-    aspect-ratio: 1 / 1;
-
-    overflow: hidden;
-
-    border-radius: 20px;
-
-    background: transparent;
-
-    box-shadow: var(--shadow);
-
-    cursor: pointer;
-}
-
-.wisata-card img {
-    width: 100%;
-    height: 100%;
-
-    display: block;
-
-    object-fit: cover;
-
-    object-position: center;
-
-    transition: transform 0.5s ease;
-}
-
-.wisata-card:hover img {
-    transform: scale(1.04);
-}
-
-
-/* =========================================================
    FASILITAS
    ========================================================= */
 
@@ -1188,7 +1132,7 @@ section {
 
     padding: 100px 6%;
 
-    background: var(--white);
+    background: var(--light);
 }
 
 .fasilitas-grid {
@@ -1207,13 +1151,13 @@ section {
 .fasilitas-card {
     min-width: 0;
 
-    padding: 30px 20px;
+    padding: 32px 22px;
 
     background: var(--white);
 
     border: 1px solid var(--border);
 
-    border-radius: 16px;
+    border-radius: 18px;
 
     text-align: center;
 
@@ -1224,12 +1168,55 @@ section {
 
 .fasilitas-card:hover {
     transform: translateY(-5px);
+    border-color: rgba(214, 168, 67, 0.4);
 }
 
 .fasilitas-icon {
-    margin-bottom: 15px;
+    width: 62px;
 
-    font-size: 35px;
+    height: 62px;
+
+    margin: 0 auto 18px;
+
+    border-radius: 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.fasilitas-card:hover .fasilitas-icon {
+    transform: scale(1.12);
+}
+
+.icon-ac {
+    background: linear-gradient(135deg, rgba(40, 90, 145, 0.12), rgba(40, 90, 145, 0.22));
+
+    color: var(--primary);
+}
+
+.icon-audio {
+    background: linear-gradient(135deg, rgba(214, 168, 67, 0.16), rgba(214, 168, 67, 0.26));
+
+    color: #9f7516;
+}
+
+.icon-seat {
+    background: linear-gradient(135deg, rgba(18, 58, 109, 0.12), rgba(18, 58, 109, 0.22));
+
+    color: var(--primary);
+}
+
+.icon-bagasi {
+    background: linear-gradient(135deg, rgba(224, 120, 30, 0.14), rgba(224, 120, 30, 0.24));
+
+    color: #cb5e06;
 }
 
 .fasilitas-card h3 {
@@ -1824,7 +1811,6 @@ section {
     */
 
     .bus-grid,
-    .wisata-grid,
     .fasilitas-grid,
     .cara-grid {
         grid-template-columns:
@@ -1893,7 +1879,6 @@ section {
     */
 
     .bus-grid,
-    .wisata-grid,
     .fasilitas-grid,
     .cara-grid {
         grid-template-columns: 1fr;
@@ -2012,7 +1997,6 @@ section {
 .hero-content,
 .price-container,
 .bus-grid,
-.wisata-grid,
 .fasilitas-grid,
 .cara-grid,
 .contact-container,
@@ -2027,7 +2011,6 @@ section {
 */
 
 .bus-grid,
-.wisata-grid,
 .fasilitas-grid,
 .cara-grid {
     width: 100%;
@@ -2046,13 +2029,12 @@ section {
 
 
 /*
-   Saat desktop, 4 kolom.
+   Saat desktop, 4 kolom (bus 4 kolom, fasilitas & cara sewa 4 kolom).
 */
 
 @media (min-width: 1101px) {
 
-    .bus-grid,
-    .wisata-grid {
+    .bus-grid {
         grid-template-columns:
             repeat(4, minmax(0, 1fr));
     }
