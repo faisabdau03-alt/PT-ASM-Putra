@@ -894,11 +894,12 @@ const dataUnit = {
         fasilitas: [
 
             "Full AC",
+            "USB Port",
+            "Dispenser Air",
             "Audio System",
-            "Kursi penumpang nyaman",
-            "Bagasi",
-            "Sabuk keselamatan",
-            "Interior bersih"
+            "Bagasi Luas",
+            "Kursi nyaman",
+            "Sabuk keselamatan"
 
         ]
 
@@ -944,10 +945,11 @@ const dataUnit = {
         fasilitas: [
 
             "Full AC",
-            "TV",
-            "Audio System",
-            "Kursi nyaman",
-            "Bagasi",
+            "USB Port",
+            "Dispenser Air",
+            "TV & Audio System",
+            "Bagasi Luas",
+            "Kursi nyaman & Reclining",
             "Interior premium"
 
         ]
@@ -994,11 +996,12 @@ const dataUnit = {
         fasilitas: [
 
             "Full AC",
-            "TV",
-            "Audio System",
+            "USB Port",
+            "Dispenser Air",
+            "TV & Audio (Karaoke)",
+            "Bagasi Ekstra Luas",
             "Kursi nyaman",
-            "Bagasi besar",
-            "Interior luas"
+            "Interior lapang"
 
         ]
 
@@ -1044,10 +1047,11 @@ const dataUnit = {
         fasilitas: [
 
             "Full AC",
-            "Reclining Seat",
-            "Kursi premium",
-            "Bagasi",
-            "Interior premium",
+            "USB Port",
+            "Dispenser Air",
+            "Smart TV & Audio",
+            "Bagasi Luas",
+            "Reclining Seat Premium",
             "Kenyamanan ekstra"
 
         ]

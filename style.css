@@ -1136,14 +1136,14 @@ section {
 }
 
 .fasilitas-grid {
-    width: min(1100px, 100%);
+    width: min(1200px, 100%);
 
     margin: 0 auto;
 
     display: grid;
 
     grid-template-columns:
-        repeat(4, minmax(0, 1fr));
+        repeat(5, minmax(0, 1fr));
 
     gap: 20px;
 }
@@ -1151,7 +1151,7 @@ section {
 .fasilitas-card {
     min-width: 0;
 
-    padding: 32px 22px;
+    padding: 28px 18px;
 
     background: var(--white);
 
@@ -1201,16 +1201,22 @@ section {
     color: var(--primary);
 }
 
-.icon-audio {
+.icon-usb {
+    background: linear-gradient(135deg, rgba(16, 149, 106, 0.12), rgba(16, 149, 106, 0.22));
+
+    color: #0e855e;
+}
+
+.icon-dispenser {
+    background: linear-gradient(135deg, rgba(6, 148, 162, 0.12), rgba(6, 148, 162, 0.22));
+
+    color: #0e7490;
+}
+
+.icon-tv {
     background: linear-gradient(135deg, rgba(214, 168, 67, 0.16), rgba(214, 168, 67, 0.26));
 
     color: #9f7516;
-}
-
-.icon-seat {
-    background: linear-gradient(135deg, rgba(18, 58, 109, 0.12), rgba(18, 58, 109, 0.22));
-
-    color: var(--primary);
 }
 
 .icon-bagasi {
@@ -1811,10 +1817,14 @@ section {
     */
 
     .bus-grid,
-    .fasilitas-grid,
     .cara-grid {
         grid-template-columns:
             repeat(2, minmax(0, 1fr));
+    }
+
+    .fasilitas-grid {
+        grid-template-columns:
+            repeat(auto-fit, minmax(210px, 1fr));
     }
 }
 
@@ -2022,14 +2032,20 @@ section {
    Lebar khusus fasilitas dan cara sewa.
 */
 
-.fasilitas-grid,
+.fasilitas-grid {
+    max-width: 1250px;
+}
+
 .cara-grid {
     max-width: 1100px;
 }
 
 
 /*
-   Saat desktop, 4 kolom (bus 4 kolom, fasilitas & cara sewa 4 kolom).
+   Saat desktop:
+   bus: 4 kolom,
+   fasilitas: 5 kolom,
+   cara sewa: 4 kolom.
 */
 
 @media (min-width: 1101px) {
@@ -2039,7 +2055,11 @@ section {
             repeat(4, minmax(0, 1fr));
     }
 
-    .fasilitas-grid,
+    .fasilitas-grid {
+        grid-template-columns:
+            repeat(5, minmax(0, 1fr));
+    }
+
     .cara-grid {
         grid-template-columns:
             repeat(4, minmax(0, 1fr));
